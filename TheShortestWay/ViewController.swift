@@ -43,9 +43,12 @@ class ViewController: UIViewController {
         return button
     }()
     
-    
+    var annotationsArray = [MKPointAnnotation]()
 
     override func viewDidLoad() {
+        
+        mapView.delegate = self
+        
         super.viewDidLoad()
         setConstraints()
         
@@ -63,24 +66,109 @@ class ViewController: UIViewController {
     @objc func addAdressButtonTapped(){
         alertAddAdress(title: "Добавить", placeholder: "Введите адрес"){ (text) in
             print(text)
+            self.setupPlacemark(adressPlace: text)
 
         }
         alertError(title: "Ошибка", message: "ав")
     }
     @objc func routeButtonTapped(){
-        print("Нажали2")
+        
+        
+        for index in 0...annotationsArray.count-2 {
+            createDirectionRequest(startCoordinate: annotationsArray[index].coordinate, destinationCoordinate: annotationsArray[index+1].coordinate)
+            
+        }
+        
+        mapView.showAnnotations(annotationsArray, animated: true)
+        
+        
         
     }
     @objc func resetButtonTapped(){
-        print("Нажали3")
+        mapView.removeOverlays(mapView.overlays)
+        mapView.removeAnnotations(mapView.annotations)
+        annotationsArray = [MKPointAnnotation]()
+        routeButton.isHidden = true
+        resetButton.isHidden = true
         
     }
     
+    
+    private func setupPlacemark(adressPlace:String){ // add an annotation to the map at the address
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(adressPlace) { placemarks, error in
+            if let error = error {
+                self.alertError(title: "Ошибка", message: "Сервер недоступен.")
+                return
+            }
+            
+            guard let placemarks = placemarks else {return}
+            let placemark = placemarks.first
+            
+            let annotation = MKPointAnnotation()
+            annotation.title = "\(adressPlace)"
+            guard let placemarkLocation = placemark?.location else {return}
+            annotation.coordinate = placemarkLocation.coordinate
+            
+            self.annotationsArray.append(annotation)
+            
+            if self.annotationsArray.count > 2 {
+                self.routeButton.isHidden = false
+                self.resetButton.isHidden = false
+            }
+            
+            self.mapView.showAnnotations(self.annotationsArray, animated: true)
+            
+        }
+    }
+    
+    //building a route
+    private func createDirectionRequest(startCoordinate: CLLocationCoordinate2D, destinationCoordinate: CLLocationCoordinate2D ){
+        
+        let startLocation = MKPlacemark(coordinate: startCoordinate)
+        let destinationLocation = MKPlacemark(coordinate: destinationCoordinate)
+        
+        let request = MKDirections.Request()
+        request.source = MKMapItem(placemark: startLocation)
+        request.destination = MKMapItem(placemark: destinationLocation)
+        request.transportType = .walking
+        request.requestsAlternateRoutes = true
+        
+        let diraction = MKDirections(request: request)
+        diraction.calculate { (responce, error) in
+            if let error = error {return}
+            guard let responce = responce else {
+                self.alertError(title: "Ошибка", message: "Маршрута несуществует")
+                return
+            }
+            
+            var minRoute = responce.routes[0]
+            for route in responce.routes {
+                print("погнали")
+                print(route.distance)
+                if route.distance < minRoute.distance{
+                    minRoute = route
+                }
+                
+                self.mapView.addOverlay(minRoute.polyline)
+                
+            }
+        }
+        
+    }
     
 
 
 }
-
+extension ViewController: MKMapViewDelegate{
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let render = MKPolylineRenderer(overlay: overlay as! MKPolyline)
+        render.strokeColor = .blue
+        return render
+    }
+    
+}
 extension ViewController {
     func setConstraints()
     {
@@ -120,5 +208,9 @@ extension ViewController {
         
     }
 
+
 }
 
+//Санкт-Петербург, Некрасова 22
+//Санкт-Петербург, Пестеля 2
+//Санкт-Петербург, Кондратьевский проспект 1

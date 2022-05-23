@@ -8,6 +8,8 @@
 import UIKit
 
 extension UIViewController{
+    
+    //alert for create points of route
     func alertAddAdress(title: String, placeholder: String, completionHandler: @escaping (String) -> Void) {
         let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         let alertOk = UIAlertAction(title: "ОК", style: .default) { (action) in
@@ -32,6 +34,7 @@ extension UIViewController{
         
     }
     
+    //alert for errors 
     func alertError(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let alertOk = UIAlertAction(title: "ОК", style: .default)
