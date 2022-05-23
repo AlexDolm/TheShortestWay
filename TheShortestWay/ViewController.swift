@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         return mapView
     }()
     
+    
     let addAdressButton: UIButton = {
         let button = UIButton()
         button.setTitleColor(.black, for: .normal)
@@ -63,7 +64,7 @@ class ViewController: UIViewController {
         
     }
     
-    @objc func addAdressButtonTapped(){
+    @objc func addAdressButtonTapped(){ //adding points
         alertAddAdress(title: "Добавить", placeholder: "Введите адрес"){ (text) in
             print(text)
             self.setupPlacemark(adressPlace: text)
@@ -71,9 +72,7 @@ class ViewController: UIViewController {
         }
         alertError(title: "Ошибка", message: "ав")
     }
-    @objc func routeButtonTapped(){
-        
-        
+    @objc func routeButtonTapped(){ //building paths from point to point
         for index in 0...annotationsArray.count-2 {
             createDirectionRequest(startCoordinate: annotationsArray[index].coordinate, destinationCoordinate: annotationsArray[index+1].coordinate)
             
@@ -84,7 +83,7 @@ class ViewController: UIViewController {
         
         
     }
-    @objc func resetButtonTapped(){
+    @objc func resetButtonTapped(){ //clearing the map
         mapView.removeOverlays(mapView.overlays)
         mapView.removeAnnotations(mapView.annotations)
         annotationsArray = [MKPointAnnotation]()
@@ -211,6 +210,3 @@ extension ViewController {
 
 }
 
-//Санкт-Петербург, Некрасова 22
-//Санкт-Петербург, Пестеля 2
-//Санкт-Петербург, Кондратьевский проспект 1
