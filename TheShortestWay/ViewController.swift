@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.setTitle("Поиск пути", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        //button.isHidden = true
+        button.isHidden = true
         return button
     }()
     
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.setTitle("Заново", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        //button.isHidden = true
+        button.isHidden = true
         return button
     }()
     
