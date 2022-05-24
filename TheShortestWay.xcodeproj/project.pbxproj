@@ -16,6 +16,7 @@
 		CEBC6974283BA55A00C0AF2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC6973283BA55A00C0AF2B /* Assets.xcassets */; };
 		CEBC6977283BA55A00C0AF2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC6975283BA55A00C0AF2B /* LaunchScreen.storyboard */; };
 		CEBC697F283BB0C900C0AF2B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC697E283BB0C800C0AF2B /* Alert.swift */; };
+		CEBC69CB283D9AC600C0AF2B /* YandexMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC69CA283D9AC600C0AF2B /* YandexMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CEBC6976283BA55A00C0AF2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBC6978283BA55A00C0AF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBC697E283BB0C800C0AF2B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		CEBC69CA283D9AC600C0AF2B /* YandexMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapViewController.swift; sourceTree = "<group>"; };
 		F4E3BE53C11EFE9AB53C3C8A /* Pods-TheShortestWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheShortestWay.debug.xcconfig"; path = "Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				CEBC6967283BA55600C0AF2B /* AppDelegate.swift */,
 				CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */,
 				CEBC696B283BA55600C0AF2B /* GoogleMapViewController.swift */,
+				CEBC69CA283D9AC600C0AF2B /* YandexMapViewController.swift */,
 				CEBC697E283BB0C800C0AF2B /* Alert.swift */,
 				CEBC696D283BA55600C0AF2B /* Main.storyboard */,
 				CEBC6973283BA55A00C0AF2B /* Assets.xcassets */,
@@ -94,7 +97,6 @@
 				F4E3BE53C11EFE9AB53C3C8A /* Pods-TheShortestWay.debug.xcconfig */,
 				5BBECEFF855B3F1EC6A72E2B /* Pods-TheShortestWay.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,6 +217,7 @@
 			files = (
 				CEBC696C283BA55600C0AF2B /* GoogleMapViewController.swift in Sources */,
 				CEBC6972283BA55600C0AF2B /* TheShortestWay.xcdatamodeld in Sources */,
+				CEBC69CB283D9AC600C0AF2B /* YandexMapViewController.swift in Sources */,
 				CEBC6968283BA55600C0AF2B /* AppDelegate.swift in Sources */,
 				CEBC697F283BB0C900C0AF2B /* Alert.swift in Sources */,
 				CEBC696A283BA55600C0AF2B /* SceneDelegate.swift in Sources */,
