@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  TheShortestWay
 //
-//  Created by mac on 23.05.2022.
+//  Created by mac on 23.05.2022!
 //
 
 import UIKit
