@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CEBC6968283BA55600C0AF2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6967283BA55600C0AF2B /* AppDelegate.swift */; };
 		CEBC696A283BA55600C0AF2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */; };
-		CEBC696C283BA55600C0AF2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC696B283BA55600C0AF2B /* ViewController.swift */; };
+		CEBC696C283BA55600C0AF2B /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC696B283BA55600C0AF2B /* GoogleMapViewController.swift */; };
 		CEBC696F283BA55600C0AF2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC696D283BA55600C0AF2B /* Main.storyboard */; };
 		CEBC6972283BA55600C0AF2B /* TheShortestWay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6970283BA55600C0AF2B /* TheShortestWay.xcdatamodeld */; };
 		CEBC6974283BA55A00C0AF2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC6973283BA55A00C0AF2B /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		CEBC6964283BA55600C0AF2B /* TheShortestWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheShortestWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC6967283BA55600C0AF2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEBC696B283BA55600C0AF2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEBC696B283BA55600C0AF2B /* GoogleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		CEBC696E283BA55600C0AF2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEBC6971283BA55600C0AF2B /* TheShortestWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheShortestWay.xcdatamodel; sourceTree = "<group>"; };
 		CEBC6973283BA55A00C0AF2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			children = (
 				CEBC6967283BA55600C0AF2B /* AppDelegate.swift */,
 				CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */,
-				CEBC696B283BA55600C0AF2B /* ViewController.swift */,
+				CEBC696B283BA55600C0AF2B /* GoogleMapViewController.swift */,
 				CEBC697E283BB0C800C0AF2B /* Alert.swift */,
 				CEBC696D283BA55600C0AF2B /* Main.storyboard */,
 				CEBC6973283BA55A00C0AF2B /* Assets.xcassets */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBC696C283BA55600C0AF2B /* ViewController.swift in Sources */,
+				CEBC696C283BA55600C0AF2B /* GoogleMapViewController.swift in Sources */,
 				CEBC6972283BA55600C0AF2B /* TheShortestWay.xcdatamodeld in Sources */,
 				CEBC6968283BA55600C0AF2B /* AppDelegate.swift in Sources */,
 				CEBC697F283BB0C900C0AF2B /* Alert.swift in Sources */,

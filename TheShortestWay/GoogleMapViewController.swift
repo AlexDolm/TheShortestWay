@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController {
+class GoogleMapViewController: UIViewController {
     
     let mapView: MKMapView = {
         let mapView = MKMapView()
@@ -159,7 +159,7 @@ class ViewController: UIViewController {
 
 
 }
-extension ViewController: MKMapViewDelegate{
+extension GoogleMapViewController: MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let render = MKPolylineRenderer(overlay: overlay as! MKPolyline)
@@ -168,7 +168,7 @@ extension ViewController: MKMapViewDelegate{
     }
     
 }
-extension ViewController {
+extension GoogleMapViewController {
     func setConstraints()
     {
         view.addSubview(mapView)
