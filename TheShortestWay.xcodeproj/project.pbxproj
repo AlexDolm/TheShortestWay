@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEB2899B283E7E5E0055D009 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEB2899A283E7E5E0055D009 /* .gitignore */; };
-		CEB2899D283E82CF0055D009 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEB2899C283E82CF0055D009 /* .gitignore */; };
+		CEB2899F283E85C20055D009 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CEB2899E283E85C20055D009 /* Podfile */; };
+		CEB289A1283E86550055D009 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEB289A0283E86550055D009 /* .gitignore */; };
 		CEBC6968283BA55600C0AF2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6967283BA55600C0AF2B /* AppDelegate.swift */; };
 		CEBC696A283BA55600C0AF2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */; };
 		CEBC696C283BA55600C0AF2B /* AppleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC696B283BA55600C0AF2B /* AppleMapViewController.swift */; };
@@ -26,8 +26,8 @@
 		094815DCEAC5BDF5865CFD88 /* Pods-TheShortestWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheShortestWay.debug.xcconfig"; path = "Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay.debug.xcconfig"; sourceTree = "<group>"; };
 		2EF9990E494D9F06CD500486 /* Pods-TheShortestWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheShortestWay.release.xcconfig"; path = "Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay.release.xcconfig"; sourceTree = "<group>"; };
 		CEB28999283E64890055D009 /* TheShortestWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheShortestWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEB2899A283E7E5E0055D009 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		CEB2899C283E82CF0055D009 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CEB2899E283E85C20055D009 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		CEB289A0283E86550055D009 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CEBC6967283BA55600C0AF2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEBC696B283BA55600C0AF2B /* AppleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +74,8 @@
 			children = (
 				CEBC6966283BA55600C0AF2B /* TheShortestWay */,
 				CEB28999283E64890055D009 /* TheShortestWay.app */,
-				CEB2899A283E7E5E0055D009 /* .gitignore */,
+				CEB2899E283E85C20055D009 /* Podfile */,
+				CEB289A0283E86550055D009 /* .gitignore */,
 				B06A4295615B660D60C7F5A1 /* Pods */,
 				1F17CDDBBB5BBA535429FA61 /* Frameworks */,
 			);
@@ -84,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				CEBC6967283BA55600C0AF2B /* AppDelegate.swift */,
-				CEB2899C283E82CF0055D009 /* .gitignore */,
 				CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */,
 				CEBC696B283BA55600C0AF2B /* AppleMapViewController.swift */,
 				CEBC69CA283D9AC600C0AF2B /* YandexMapViewController.swift */,
@@ -158,8 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB2899D283E82CF0055D009 /* .gitignore in Resources */,
-				CEB2899B283E7E5E0055D009 /* .gitignore in Resources */,
+				CEB289A1283E86550055D009 /* .gitignore in Resources */,
+				CEB2899F283E85C20055D009 /* Podfile in Resources */,
 				CEBC6977283BA55A00C0AF2B /* LaunchScreen.storyboard in Resources */,
 				CEBC6974283BA55A00C0AF2B /* Assets.xcassets in Resources */,
 				CEBC696F283BA55600C0AF2B /* Main.storyboard in Resources */,
