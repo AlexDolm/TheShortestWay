@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78D52277FBBF2163E3280198 /* Pods_TheShortestWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77B0A462336BEA8191BE2A6 /* Pods_TheShortestWay.framework */; };
 		CEB2899B283E7E5E0055D009 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEB2899A283E7E5E0055D009 /* .gitignore */; };
 		CEBC6968283BA55600C0AF2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6967283BA55600C0AF2B /* AppDelegate.swift */; };
 		CEBC696A283BA55600C0AF2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C514EE6B158AC695077EADA /* Pods-TheShortestWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheShortestWay.release.xcconfig"; path = "Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay.release.xcconfig"; sourceTree = "<group>"; };
 		CEB28999283E64890055D009 /* TheShortestWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheShortestWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB2899A283E7E5E0055D009 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CEBC6967283BA55600C0AF2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +32,6 @@
 		CEBC6978283BA55A00C0AF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBC697E283BB0C800C0AF2B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		CEBC69CA283D9AC600C0AF2B /* YandexMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapViewController.swift; sourceTree = "<group>"; };
-		F33C53F64B6180B1D35AC105 /* Pods-TheShortestWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheShortestWay.debug.xcconfig"; path = "Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay.debug.xcconfig"; sourceTree = "<group>"; };
-		F77B0A462336BEA8191BE2A6 /* Pods_TheShortestWay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheShortestWay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,38 +39,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78D52277FBBF2163E3280198 /* Pods_TheShortestWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B6729B3ECEFEBF5331E3BD3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F77B0A462336BEA8191BE2A6 /* Pods_TheShortestWay.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CC7648FC67C2A224A4148FF9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F33C53F64B6180B1D35AC105 /* Pods-TheShortestWay.debug.xcconfig */,
-				2C514EE6B158AC695077EADA /* Pods-TheShortestWay.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		CEBC695B283BA55600C0AF2B = {
 			isa = PBXGroup;
 			children = (
 				CEBC6966283BA55600C0AF2B /* TheShortestWay */,
 				CEB28999283E64890055D009 /* TheShortestWay.app */,
 				CEB2899A283E7E5E0055D009 /* .gitignore */,
-				CC7648FC67C2A224A4148FF9 /* Pods */,
-				1B6729B3ECEFEBF5331E3BD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,11 +78,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBC697B283BA55A00C0AF2B /* Build configuration list for PBXNativeTarget "TheShortestWay" */;
 			buildPhases = (
-				BAEEA9358360082C3C5D29F1 /* [CP] Check Pods Manifest.lock */,
 				CEBC6960283BA55600C0AF2B /* Sources */,
 				CEBC6961283BA55600C0AF2B /* Frameworks */,
 				CEBC6962283BA55600C0AF2B /* Resources */,
-				6AEDBFEC7CC02454B7EB0783 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,48 +137,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6AEDBFEC7CC02454B7EB0783 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BAEEA9358360082C3C5D29F1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TheShortestWay-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEBC6960283BA55600C0AF2B /* Sources */ = {
@@ -360,7 +292,6 @@
 		};
 		CEBC697C283BA55A00C0AF2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F33C53F64B6180B1D35AC105 /* Pods-TheShortestWay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,7 +321,6 @@
 		};
 		CEBC697D283BA55A00C0AF2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C514EE6B158AC695077EADA /* Pods-TheShortestWay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
