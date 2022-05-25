@@ -12,7 +12,7 @@
         <!--YANDEX MAP-->
         <scene sceneID="NDo-6g-PFp">
             <objects>
-                <viewController id="4hf-JL-vZQ" sceneMemberID="viewController">
+                <viewController id="4hf-JL-vZQ" customClass="YandexMapViewController" customModule="TheShortestWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3rm-3c-acO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UQ-1s-LK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-765" y="403"/>
+            <point key="canvasLocation" x="-765.21739130434787" y="402.45535714285711"/>
         </scene>
         <!--APPLE MAP-->
         <scene sceneID="oWh-Q4-Mqk">

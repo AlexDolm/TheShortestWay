@@ -12,7 +12,7 @@ import CoreLocation
 
 class AppleMapViewController: UIViewController {
     
-    let mapView: MKMapView = {
+    let mapView: MKMapView = { //map initialization
         let mapView = MKMapView()
         mapView.translatesAutoresizingMaskIntoConstraints = false
         return mapView
@@ -54,6 +54,7 @@ class AppleMapViewController: UIViewController {
         super.viewDidLoad()
         setConstraints()
         
+        //button function declaration
         addAdressButton.addTarget(
             self, action: #selector(addAdressButtonTapped) , for: .touchUpInside)
         
@@ -98,7 +99,7 @@ class AppleMapViewController: UIViewController {
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(adressPlace) { placemarks, error in
             if let error = error {
-                self.alertError(title: "Ошибка", message: "Сервер недоступен.")
+                self.alertError(title: "Ошибка", message: "Адреса не существует.")
                 return
             }
             
@@ -112,7 +113,7 @@ class AppleMapViewController: UIViewController {
             
             self.annotationsArray.append(annotation)
             
-            if self.annotationsArray.count > 2 {
+            if self.annotationsArray.count > 1 { //show button if 2 or more addresses
                 self.routeButton.isHidden = false
                 self.resetButton.isHidden = false
             }
@@ -142,18 +143,18 @@ class AppleMapViewController: UIViewController {
                 return
             }
             
-            var minRoute = responce.routes[0]
+            var minRoute = responce.routes[0] //looking for the fastest route
+            
             for route in responce.routes {
-                print("погнали")
                 print(route.distance)
                 if route.distance < minRoute.distance{
                     minRoute = route
                 }
-                
-                self.mapView.addOverlay(minRoute.polyline)
-                
             }
+
+            self.mapView.addOverlay(minRoute.polyline)
         }
+        
         
     }
     
