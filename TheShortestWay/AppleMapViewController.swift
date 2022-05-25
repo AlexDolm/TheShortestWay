@@ -10,7 +10,7 @@ import MapKit
 import CoreLocation
 //import YandexMapKit
 
-class GoogleMapViewController: UIViewController {
+class AppleMapViewController: UIViewController {
     
     let mapView: MKMapView = {
         let mapView = MKMapView()
@@ -160,7 +160,7 @@ class GoogleMapViewController: UIViewController {
 
 
 }
-extension GoogleMapViewController: MKMapViewDelegate{
+extension AppleMapViewController: MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let render = MKPolylineRenderer(overlay: overlay as! MKPolyline)
@@ -169,7 +169,7 @@ extension GoogleMapViewController: MKMapViewDelegate{
     }
     
 }
-extension GoogleMapViewController {
+extension AppleMapViewController {
     func setConstraints()
     {
         view.addSubview(mapView)

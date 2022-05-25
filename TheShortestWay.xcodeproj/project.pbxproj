@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CEBC6968283BA55600C0AF2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6967283BA55600C0AF2B /* AppDelegate.swift */; };
 		CEBC696A283BA55600C0AF2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */; };
-		CEBC696C283BA55600C0AF2B /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC696B283BA55600C0AF2B /* GoogleMapViewController.swift */; };
+		CEBC696C283BA55600C0AF2B /* AppleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC696B283BA55600C0AF2B /* AppleMapViewController.swift */; };
 		CEBC696F283BA55600C0AF2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC696D283BA55600C0AF2B /* Main.storyboard */; };
 		CEBC6972283BA55600C0AF2B /* TheShortestWay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEBC6970283BA55600C0AF2B /* TheShortestWay.xcdatamodeld */; };
 		CEBC6974283BA55A00C0AF2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC6973283BA55A00C0AF2B /* Assets.xcassets */; };
@@ -19,10 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEBC6964283BA55600C0AF2B /* TheShortestWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TheShortestWay.app; path = "/Volumes/Expansion/Projects/TheShortestWay/build/Debug-iphoneos/TheShortestWay.app"; sourceTree = "<absolute>"; };
 		CEBC6967283BA55600C0AF2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEBC696B283BA55600C0AF2B /* GoogleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
+		CEBC696B283BA55600C0AF2B /* AppleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapViewController.swift; sourceTree = "<group>"; };
 		CEBC696E283BA55600C0AF2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEBC6971283BA55600C0AF2B /* TheShortestWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheShortestWay.xcdatamodel; sourceTree = "<group>"; };
 		CEBC6973283BA55A00C0AF2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		CEBC6978283BA55A00C0AF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBC697E283BB0C800C0AF2B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		CEBC69CA283D9AC600C0AF2B /* YandexMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapViewController.swift; sourceTree = "<group>"; };
+		CEBC69CC283E307700C0AF2B /* TheShortestWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheShortestWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				CEBC6966283BA55600C0AF2B /* TheShortestWay */,
+				CEBC69CC283E307700C0AF2B /* TheShortestWay.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +56,7 @@
 			children = (
 				CEBC6967283BA55600C0AF2B /* AppDelegate.swift */,
 				CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */,
-				CEBC696B283BA55600C0AF2B /* GoogleMapViewController.swift */,
+				CEBC696B283BA55600C0AF2B /* AppleMapViewController.swift */,
 				CEBC69CA283D9AC600C0AF2B /* YandexMapViewController.swift */,
 				CEBC697E283BB0C800C0AF2B /* Alert.swift */,
 				CEBC696D283BA55600C0AF2B /* Main.storyboard */,
@@ -84,7 +85,7 @@
 			);
 			name = TheShortestWay;
 			productName = TheShortestWay;
-			productReference = CEBC6964283BA55600C0AF2B /* TheShortestWay.app */;
+			productReference = CEBC69CC283E307700C0AF2B /* TheShortestWay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBC696C283BA55600C0AF2B /* GoogleMapViewController.swift in Sources */,
+				CEBC696C283BA55600C0AF2B /* AppleMapViewController.swift in Sources */,
 				CEBC6972283BA55600C0AF2B /* TheShortestWay.xcdatamodeld in Sources */,
 				CEBC69CB283D9AC600C0AF2B /* YandexMapViewController.swift in Sources */,
 				CEBC6968283BA55600C0AF2B /* AppDelegate.swift in Sources */,
