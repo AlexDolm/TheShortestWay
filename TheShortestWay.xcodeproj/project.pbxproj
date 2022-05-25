@@ -16,13 +16,9 @@
 		CEBC6977283BA55A00C0AF2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBC6975283BA55A00C0AF2B /* LaunchScreen.storyboard */; };
 		CEBC697F283BB0C900C0AF2B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC697E283BB0C800C0AF2B /* Alert.swift */; };
 		CEBC69CB283D9AC600C0AF2B /* YandexMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC69CA283D9AC600C0AF2B /* YandexMapViewController.swift */; };
-		E32FD69FD23233EE6E122B05 /* Pods_TheShortestWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25339B39A9E6CD2CFD1E5001 /* Pods_TheShortestWay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		25339B39A9E6CD2CFD1E5001 /* Pods_TheShortestWay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheShortestWay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DF6C79244867C9888C5BC35 /* Pods-TheShortestWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheShortestWay.release.xcconfig"; path = "Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay.release.xcconfig"; sourceTree = "<group>"; };
-		94E05B4D817E4D90C15F5FE5 /* Pods-TheShortestWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheShortestWay.debug.xcconfig"; path = "Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay.debug.xcconfig"; sourceTree = "<group>"; };
 		CEB28999283E64890055D009 /* TheShortestWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheShortestWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC6967283BA55600C0AF2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBC6969283BA55600C0AF2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,30 +37,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E32FD69FD23233EE6E122B05 /* Pods_TheShortestWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A6443B0CFA0800EAFC245025 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				94E05B4D817E4D90C15F5FE5 /* Pods-TheShortestWay.debug.xcconfig */,
-				4DF6C79244867C9888C5BC35 /* Pods-TheShortestWay.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		CEBC695B283BA55600C0AF2B = {
 			isa = PBXGroup;
 			children = (
 				CEBC6966283BA55600C0AF2B /* TheShortestWay */,
 				CEB28999283E64890055D009 /* TheShortestWay.app */,
-				A6443B0CFA0800EAFC245025 /* Pods */,
-				E929E691C96F839598A7FC3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,14 +68,6 @@
 			path = TheShortestWay;
 			sourceTree = "<group>";
 		};
-		E929E691C96F839598A7FC3B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				25339B39A9E6CD2CFD1E5001 /* Pods_TheShortestWay.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,11 +75,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBC697B283BA55A00C0AF2B /* Build configuration list for PBXNativeTarget "TheShortestWay" */;
 			buildPhases = (
-				BD9DFD72338DF8C1306BB341 /* [CP] Check Pods Manifest.lock */,
 				CEBC6960283BA55600C0AF2B /* Sources */,
 				CEBC6961283BA55600C0AF2B /* Frameworks */,
 				CEBC6962283BA55600C0AF2B /* Resources */,
-				48917279337B49A60F522042 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,48 +133,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		48917279337B49A60F522042 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheShortestWay/Pods-TheShortestWay-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD9DFD72338DF8C1306BB341 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TheShortestWay-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEBC6960283BA55600C0AF2B /* Sources */ = {
@@ -357,7 +288,6 @@
 		};
 		CEBC697C283BA55A00C0AF2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94E05B4D817E4D90C15F5FE5 /* Pods-TheShortestWay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -387,7 +317,6 @@
 		};
 		CEBC697D283BA55A00C0AF2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DF6C79244867C9888C5BC35 /* Pods-TheShortestWay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
